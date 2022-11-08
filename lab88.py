@@ -1,4 +1,5 @@
-#Посчитайте, сколько раз символ встречается в строке.
+def outer_func():
+    def inner_func():
+        print("Hello, World!")
 
-string = 'Python Software Foundation'
-string.count('o')
+    inner_func()
