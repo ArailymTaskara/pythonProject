@@ -1,0 +1,7 @@
+a = 0
+def increment1():
+    global a
+    a += 1
+
+def increment2(a):
+    return a + 1
