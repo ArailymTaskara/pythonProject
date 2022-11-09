@@ -31,4 +31,11 @@ for i in range(len(names)):
 
 print_names
 # => ['Шпунтик', 'Винтик', 'Шпунтик']
-    
+
+sentences = ['капитан джек воробей',
+             'капитан дальнего плавания',
+             'ваша лодка готова, капитан']
+
+cap_count = reduce(lambda a, x: a + x.count('капитан'),
+                   sentences,
+                   0)
