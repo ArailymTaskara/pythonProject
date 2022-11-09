@@ -20,4 +20,15 @@ squares = map(lambda x: x * x, [0, 1, 2, 3, 4])
 
 print_squares_sss
 # => [0, 1, 4, 9, 16]
+
+import random
+
+names = ['Маша', 'Петя', 'Вася']
+code_names = ['Шпунтик', 'Винтик', 'Фунтик']
+
+for i in range(len(names)):
+    names[i] = random.choice(code_names)
+
+print_names
+# => ['Шпунтик', 'Винтик', 'Шпунтик']
     
