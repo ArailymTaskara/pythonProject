@@ -31,14 +31,4 @@ for i in range(len(names)):
 
 print_names
 # => ['Шпунтик', 'Винтик', 'Шпунтик']
-
-def assoc(_d, key, value):
-    from copy import deepcopy
-    d = deepcopy(_d)
-    d[key] = value
-    return d
-
-def call(fn, key):
-    def apply_fn(record):
-        return assoc(record, key, fn(record.get(key)))
-    return apply_fn
+    
