@@ -1,21 +1,5 @@
-def outer_func():
-    def inner_func():
-        print("Hello, World!")
-
-    inner_func()
-
-
-def reducer_func(el_prev, el):
-    # el_prev — предшествующий элемент
-    # el — текущий элемент
-    return el_prev + el
-
-    # python 2
-
-
-reduce(reducer_func, [1, 2, 3])  # 6
-
-# python 3
+#Вычисление суммы всех элементов списка при помощи reduce:
 from functools import reduce
-
-reduce(reducer_func, [1, 2, 3])  # 6
+items = [10, 20, 30, 40, 50]
+sum_all = reduce(lambda x,y: x + y, items)
+print(sum_all)

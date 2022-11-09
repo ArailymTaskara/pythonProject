@@ -1,16 +1,9 @@
-# This is a sample Python script.
+numbers = [1, 2, 3, 4, 5]
+squared = map(lambda num: num ** 2, numbers)
+print(list(squared))
+#[1, 4, 9, 16, 25]
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+str_nums = ["4", "8", "6", "5", "3", "2", "8", "9", "2", "5"]
+int_nums = map(int, str_nums)
+print(int_nums)
+print(list(int_nums))
