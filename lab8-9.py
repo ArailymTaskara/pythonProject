@@ -18,6 +18,6 @@ print_name_lengths
 
 squares = map(lambda x: x * x, [0, 1, 2, 3, 4])
 
-print squares
+print_squares_sss
 # => [0, 1, 4, 9, 16]
     
