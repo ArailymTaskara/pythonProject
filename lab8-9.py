@@ -31,4 +31,18 @@ for i in range(len(names)):
 
 print_names
 # => ['Шпунтик', 'Винтик', 'Шпунтик']
-    
+
+def extract_name_and_country(band):
+    plucked_band = {}
+    plucked_band['name'] = band['name']
+    plucked_band['country'] = band['country']
+    return plucked_band
+
+print pipeline_each(bands, [call(lambda x: 'Canada', 'country'),
+                            call(lambda x: x.replace('.', ''), 'name'),
+                            call(str.title, 'name'),
+                            extract_name_and_country])
+
+# => [{'name': 'Sunset Rubdown', 'country': 'Canada'},
+#     {'name': 'Women', 'country': 'Canada'},
+#     {'name': 'A Silver Mt Zion', 'country': 'Canada'}]
