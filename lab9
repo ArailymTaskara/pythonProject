@@ -14,3 +14,9 @@ res = list(zip(a, b, c))
 print (res)
 
 [(1, 'x', None), (2, 'y', True)]
+
+import random
+
+names = ['Маша', 'Петя', 'Вася']
+
+secret_names = map(lambda x: random.choice(['Шпунтик', 'Винтик', 'Фунтик']), names)
