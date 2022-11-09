@@ -16,4 +16,8 @@ name_lengths = map(len, ['Маша', 'Петя', 'Вася'])
 print_name_lengths
 # => [4, 4, 3]
 
+squares = map(lambda x: x * x, [0, 1, 2, 3, 4])
+
+print squares
+# => [0, 1, 4, 9, 16]
     
