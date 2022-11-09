@@ -11,4 +11,9 @@ def factorial(number):
         return number * inner_factorial(number - 1)
     return inner_factorial(number)
 
+name_lengths = map(len, ['Маша', 'Петя', 'Вася'])
+
+print_name_lengths
+# => [4, 4, 3]
+
     
